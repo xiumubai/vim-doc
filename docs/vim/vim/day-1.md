@@ -4,6 +4,9 @@
 
   正如进入游戏后我们首先是尝试移动我们控制的人物，开始 vim 的第一步，当然就是控制光标的上下左右啦；在开始之前，先忘记我们常用的右下的方向键（如果你是一个臭打游戏的，把 w a s d 也忘记，谢谢你）。
 
+
+  如果打字不熟练的，可以在这个[网站](https://www.edclub.com/sportal/)去练习自己的打字速度，每天半个小时即可。
+
 ## 模式切换
   
   对于 vim 来说，有：
@@ -34,7 +37,25 @@
   - 光标后插入：`a` （即 after） （命令模式中）
   - 删除一整行：`dd` （命令模式中）
 
-### 小练习
+## 光标快速移动
+
+当我按方向键去移动光标的时候，会很慢，不是那么丝滑，下面我们通过配置的方式让你的光标可以快速的移动
+
+把下方的命令在终端一次执行一次
+
+```
+$ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false              # For VS Code
+$ defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false      # For VS Code Insider
+$ defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false         # For VS Codium
+$ defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false   # For VS Codium Exploration users
+$ defaults delete -g ApplePressAndHoldEnabled    
+```
+
+然后找到`系统设置` `键盘` `按键重复`和`重复前延迟`拉到最大，vscode需要重启才能起作用。
+
+设置完成以后你的光标不管是在终端还是在Vscode当中，就可以快速的移动了。
+
+## 小练习
 把下列句子按照第一句的正确顺序修改好并把多余的空行删除
 ```
 this is a simple easy vim tutorial
