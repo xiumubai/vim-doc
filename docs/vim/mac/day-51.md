@@ -13,7 +13,7 @@
 - `command` + `` ` ``：切换同一个软件中的多个窗口，如 VScode 打开多个工作区窗口时即可用它切换；
 
 :::tip HHKB 键盘改键方案
-对于一些使用 HHKB 的朋友来说，由于键盘中的 `esc` 是在 `` ` `` 键的位置，而无法直接输入 `` ` ``，所以我们可以通过 Karabiner 配置 `command` + `esc` 映射为 `command` + `` ` ``，具体的规则参考之前的 [Karabiner 的映射规则导入](./../keybinding.md#全局)。
+对于一些使用 HHKB 的朋友来说，由于键盘中的 `esc` 是在 `` ` `` 键的位置，而无法直接输入 `` ` ``，所以我们可以通过 Karabiner 配置 `command` + `esc` 映射为 `command` + `` ` ``，具体的规则参考之前的 [Karabiner 的映射规则导入](../guide/keybinding.md)。
 :::
 
 - `command` + `f`：全屏；

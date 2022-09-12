@@ -9,15 +9,15 @@ export default function sidebarVim() {
         },
         {
           text: 'Mac 环境准备',
-          link: '/vim/for-mac',
+          link: '/vim/guide/mac.md',
         },
         {
           text: 'Window 环境准备',
-          link: '/vim/for-window',
+          link: '/vim/guide/window.md',
         },
         {
           text: '改键建议及设置参考',
-          link: '/vim/keybinding',
+          link: '/vim/guide/keybinding.md',
         },
       ],
     },
