@@ -2,14 +2,14 @@
  * @Author: 朽木白
  * @Date: 2022-09-03 01:09:44
  * @LastEditors: xxx@xxx.com
- * @LastEditTime: 2022-09-12 15:40:42
+ * @LastEditTime: 2022-09-12 16:18:53
  * @Description:
  */
 
-import sidebarDemo from './sidebar/demo';
+import sidebarVim from './sidebar/vim';
 
 module.exports = {
-  title: 'vivace',
+  title: 'vivace-vim',
   description: 'frontend docs',
   lastUpdated: true,
   head: [
@@ -23,7 +23,7 @@ module.exports = {
     ],
   ],
   themeConfig: {
-    siteTitle: 'Vivace',
+    siteTitle: 'Vivace-vim',
     logo: '/logo.png',
     laslltUpdatedText: '最后更新',
     socialLinks: [
@@ -36,15 +36,8 @@ module.exports = {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2022-present xiumubai',
     },
-    nav: [
-      {
-        text: 'demo',
-        link: '/demo/',
-        activeMatch: '/demo/',
-      },
-    ],
     sidebar: {
-      '/demo/': sidebarDemo(),
+      '/': sidebarVim(),
     },
   },
 };
